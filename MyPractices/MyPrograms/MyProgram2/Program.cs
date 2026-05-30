@@ -8,6 +8,7 @@ Console.WriteLine("Welcome to my Calcutor Program!");
 
 try
 {
+    Console.WriteLine("Open db connection");
     Console.WriteLine("Please enter the first number:");
     //var firstNumberInput = decimal.Parse(Console.ReadLine());
     decimal.TryParse(Console.ReadLine(), out firstNumberInput);
@@ -153,13 +154,40 @@ try
     }
 
     Console.WriteLine($"The result of the operation is: {total}");
+    //Console.WriteLine("Closing db connection");
 
 }
+//catch (FormatException ex)
+//{
+//    Console.WriteLine("Invalid input format. Please enter valid numbers and select a valid operation.");
+//    Console.WriteLine($"Error details: {ex.Message}");
+//    //throw;
+//    //Console.WriteLine("Closing db connection");
+//}
+//catch (DivideByZeroException ex)
+//{
+//    Console.WriteLine("Division by zero is not allowed. Please enter a non-zero second number for division.");
+//    Console.WriteLine($"Error details: {ex.Message}");
+//    //throw;
+//    //Console.WriteLine("Closing db connection");
+//}
+//catch (ArithmeticException ex)
+//{
+//    Console.WriteLine("An arithmetic error occurred during the calculation. Please check your inputs and try again.");
+//    Console.WriteLine($"Error details: {ex.Message}");
+//    //throw;
+//    //Console.WriteLine("Closing db connection");
+//}
 catch (Exception ex)
 {
     Console.WriteLine("An error occurred while performing the calculation. Please make sure to enter valid numbers and select a valid operation.");
     Console.WriteLine($"Error details: {ex.Message}");
     //throw;
+    //Console.WriteLine("Closing db connection");
+}
+finally
+{
+    Console.WriteLine("Closing db connection");
 }
 
 Console.ReadKey();
