@@ -3,7 +3,8 @@
 //decimal secondNumberInput;
 //decimal[] typedNumbers = new decimal [2];
 //decimal[] typedNumbers;
-List<decimal> typedNumbers = new List<decimal>();
+//List<decimal> typedNumbers = new List<decimal>();
+List<decimal> typedNumbers ;
 //typedNumbers = new decimal[2];
 //typedNumbers = new decimal[1];
 bool running = true;

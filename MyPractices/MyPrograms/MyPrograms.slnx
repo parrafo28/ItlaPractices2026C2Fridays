@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="My1Program/My1Program.csproj" />
+  <Project Path="My4PRogram/My4PRogram.csproj" Id="54f3d19e-992b-44f3-99e6-271a209f66ac" />
   <Project Path="MyProgram2/MyProgram2.csproj" Id="cb2efe56-a3e1-4b1d-8e4c-031fa417a521" />
   <Project Path="MyProgram3/MyProgram3.csproj" Id="4b8376bf-5ef2-43db-96d0-170276c76dda" />
 </Solution>
